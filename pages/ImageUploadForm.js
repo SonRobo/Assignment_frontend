@@ -29,7 +29,8 @@ const ImageUploadForm = ({ username }) => {
         formData.append(`comment[${index}]`, comment);
       });
 
-      const response = await axios.post('/api/upload', formData, {
+      const response = await axios.post('https://api.dev.socialappserver.online/api/v1/post', formData,  {
+        withCredentials: true,
         headers: {
           'Content-Type': 'multipart/form-data',
         },

@@ -11,9 +11,9 @@ const ImageList = () => {
 
   const fetchImages = async () => {
     try {
-      const response = await axios.get('API'); 
+      const response = await axios.get('https://api.dev.socialappserver.online/api/v1/post'); 
       setImages(response.data.posts); 
-      // setImages(test.posts)
+      //setImages(test.posts)
     } catch (error) {
       console.error('Error fetching images:', error);
     }

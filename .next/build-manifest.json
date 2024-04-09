@@ -17,10 +17,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/index.js"
     ],
-    "/ImageList": [
+    "/ImageUploadForm": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/ImageList.js"
+      "static/chunks/pages/ImageUploadForm.js"
     ],
     "/_app": [
       "static/chunks/webpack.js",

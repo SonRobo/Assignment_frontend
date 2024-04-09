@@ -8,12 +8,10 @@ const Home = () => {
   const router = useRouter();
 
   const handleUsernameSubmit = async (e) => {
-    router.push('/ImageUploadForm')
     e.preventDefault();
     try {
     
-      await axios.post('API', { username });
-
+      await axios.post('https://api.dev.socialappserver.online/api/v1/user/signin', { username }, {withCredentials: true});
       router.push('/ImageUploadForm');
     } catch (error) {
       console.error('Error posting username:', error);
